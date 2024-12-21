@@ -214,7 +214,7 @@
             // mobile: !0,
             desktop: !0,
             basis: !0,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
           eric2: {
             loop: !1,
@@ -225,7 +225,7 @@
             // mobile: !0,
             desktop: !0,
             basis: !0,
-            // mobileBasis: !1,
+            mobileBasis: !1,
           },
           fozzy: {
             loop: !1,
@@ -236,7 +236,7 @@
             // mobile: !0,
             desktop: !0,
             basis: !0,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
           girl: {
             loop: !1,
@@ -247,7 +247,7 @@
             // mobile: !1,
             desktop: !0,
             basis: !0,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
           girlMobile: {
             loop: !1,
@@ -257,7 +257,7 @@
             repeatFrequency: 3,
             // mobile: !0,
             desktop: !1,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
           logo: {
             loop: !0,
@@ -268,7 +268,7 @@
             // mobile: !0,
             desktop: !0,
             basis: !0,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
           muppets: {
             loop: !1,
@@ -279,7 +279,7 @@
             // mobile: !1,
             desktop: !0,
             basis: !0,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
           muppetsMobile: {
             loop: !1,
@@ -289,7 +289,7 @@
             repeatFrequency: 5,
             // mobile: !0,
             desktop: !1,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
           cookies: {
             loop: !1,
@@ -300,7 +300,7 @@
             // mobile: !0,
             desktop: !0,
             basis: !0,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
           buyopen: {
             loop: !1,
@@ -311,7 +311,7 @@
             // mobile: !1,
             desktop: !0,
             basis: !0,
-            // mobileBasis: !0,
+            mobileBasis: !0,
           },
         };
       n.default = function () {
