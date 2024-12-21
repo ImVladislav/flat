@@ -1,24 +1,5 @@
 { 
     
-    "about": [
-        
-        {
-            "density": 2, "friction": 0, "bounce": 0, 
-            "filter": { "categoryBits": 1, "maskBits": 65535 },
-            "shape": [   2983, 200  ,  2895, 212  ,  2894, 59  ,  2984, 40  ]
-        }
-    ]
-    , 
-
-    "tiktok": [
-        
-        {
-            "density": 2, "friction": 0, "bounce": 0, 
-           
-            "shape": [   2987, 643  ,  2893, 639  ,  2893, 473  ,  2987, 469  ]
-        }
-    ]
-    , 
     "coinmarketcap": [
         
         {
@@ -55,7 +36,7 @@
         }
     ]
     , 
-    "x1": [
+    "x": [
         
         {
             "density": 2, "friction": 0, "bounce": 0, 

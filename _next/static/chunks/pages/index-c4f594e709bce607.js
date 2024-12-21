@@ -1165,15 +1165,10 @@
                 jsonKey: "coinmarketcap",
                 color: "rgba(0, 0, 255, 0.67)",
               },
-              x1: {
+              x: {
                 url: "https://www.instagram.com/flatericonsol/",
-                jsonKey: "x1",
+                jsonKey: "x",
                 color: "rgba(0, 0, 0, 0.67)",
-              },
-              about: {
-                url: "https://t.me/Flat_Eric_Community",
-                jsonKey: "about",
-                color: "rgba(0, 136, 204, 0.67)",
               },
               telegram: {
                 url: "https://t.me/Flat_Eric_Community",
@@ -1632,6 +1627,7 @@
                     style: {
                       backgroundImage: "url('/videos/placeholder.png')",
                       cursor: "pointer",
+                      zIndex: "1000",
                     },
                     className:
                       "enter-video !w-[100vw] !min-h-[100vh] !bg-center !bg-cover",

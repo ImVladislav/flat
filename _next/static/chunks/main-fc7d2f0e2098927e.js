@@ -6790,33 +6790,33 @@
   },
 ]);
 document.addEventListener('DOMContentLoaded', () => {
-    const aboutButton = document.querySelector('#aboutButton'); // Replace with the actual ID or class of your "About" button
-    const aboutModal = document.querySelector('#aboutModal');
-    const aboutContent = document.querySelector('#aboutContent');
-    const closeModal = document.querySelector('#closeModal');
+    const about = {
+        url: "https://t.me/Flat_Eric_Community",
+        jsonKey: "about",
+        color: "rgba(0, 136, 204, 0.67)",
+    };
 
-    const aboutText = `
-        <- go back into the room
-        <h2>About Flat Eric</h2>
-        <p>Flat Eric is a quirky puppet character created by Quentin Dupieux for Levi's ads promoting Sta-Prest One Crease Denim...</p>
-        <!-- Rest of your content -->
-    `;
+    const aboutButton = document.getElementById('aboutButton');
+    const aboutModal = document.getElementById('aboutModal');
+    const closeModal = document.getElementById('closeModal');
 
-    // Show modal and populate content
-    aboutButton.addEventListener('click', () => {
-        aboutContent.innerHTML = aboutText;
-        aboutModal.style.display = 'block';
+    // Обробник кліку на About
+    aboutButton.addEventListener('click', (event) => {
+        event.preventDefault(); // Відміняємо стандартну дію (перехід за посиланням)
+        aboutModal.classList.add('show'); // Відкриваємо модальне вікно
     });
 
-    // Close modal
+    // Закриття модального вікна
     closeModal.addEventListener('click', () => {
-        aboutModal.style.display = 'none';
+        aboutModal.classList.remove('show');
     });
 
-    // Close modal when clicking outside content
-    aboutModal.addEventListener('click', (e) => {
-        if (e.target === aboutModal) {
-            aboutModal.style.display = 'none';
+    // Закриття при кліку поза модальним вікном
+    window.addEventListener('click', (event) => {
+        if (event.target === aboutModal) {
+            aboutModal.classList.remove('show');
         }
     });
 });
+
+

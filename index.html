@@ -33,14 +33,49 @@
     <script src="_next/static/ENMx39zBjcOR11lVZnEyp/_buildManifest.js" defer=""></script>
     <script src="_next/static/ENMx39zBjcOR11lVZnEyp/_ssgManifest.js" defer=""></script>
     <script src="_next/static/ENMx39zBjcOR11lVZnEyp/_middlewareManifest.js" defer=""></script>
+    <script src="about.js" defer=""></script>
 </head>
 
 <body>
-    <div id="__next">
-        
-          уууууу
+    <div class="about-button-container">
+        <button id="aboutButton" style="background-color: rgba(0, 136, 204, 0.67);">About</button>
+    </div>
+    
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-button">&larr; Go back into the room</button>
+            <div id="aboutContent">
+                <h2>About Flat Eric</h2>
+                <p>Flat Eric is a quirky puppet character created by Quentin Dupieux for Levi's ads promoting Sta-Prest One Crease Denim. He was expertly crafted at Jim Henson's Creature Shop, renowned for bringing to life some of the most beloved puppets in entertainment history (The Muppets). The name "Flat Eric" comes from a humorous idea for a commercial where a car would run over his head and flatten him out. Although that concept never made it to the screen, the catchy name stuck and has since become iconic. With his unique charm and playful vibe, Flat Eric quickly won over audiences, establishing himself as a standout character in the world of advertising and beyond.</p>
+                <h2>Background</h2>
+                <p>Flat Eric is inspired by a dog-like puppet named Stéphane, which had ears and fixed hands. Stéphane appeared in a few short films by Mr. Oizo, including a video for the track "M-Seq," and he gained a small cult following in the UK and France. In March 1999, Levi's decided to create a TV commercial campaign featuring the puppet, directed by Oizo. The character was renamed Eric for a more "international" appeal, moving away from the original French name. The name Eric was chosen in honor of Eric Morand, one of the founders of the record label F Communications.</p>
+                <p>Flat Eric was created by Janet Knechtel at Jim Henson's Creature Shop in the UK, with Drew Massey performing him in all the Levi's commercials. Filming the ads took about three days, while the original short films featuring Stéphane were made for around 15,000 francs each. In contrast, the two Levi's ads cost around two to three million francs each. Oizo and the production company Partizan retained the rights to the character.</p>
+                <h2>Biography</h2>
+                <p>Quentin Dupieux and his alter-ego Mr. Oizo have both been busy over the past 15 years. Dupieux has been making acclaimed (and bonkers) films, such as Rubber and Steak, while Mr. Oizo has carried on releasing playful techno and house EPs and albums, loaded with laughter-inducing sounds, for Ed Banger. But what about Dupieux's world-famous creation, that headbanging yellow creature called Flat Eric?</p>
+                <p>Eric is about to make his comeback in Dupieux's contribution to Red Bull Music Academy's five-part web series Paris Now!, directing a play about his and creator Mr. Oizo's life starring Eastbound And Down's Steve Little.</p>
+                <h2>The Degan Muppet King on Solana</h2>
+                <img src="./eric-king.jpg">
+                <p>Eric once thrived under the bright spotlight of fame as one of the first and biggest internet sensations, adored by fans and celebrated as a rising star in the entertainment world. But as time wore on, his prominence waned, and the adoration that once surrounded him slowly evaporated. Forgotten by an industry that had once embraced him, Eric descended into a profound depression, grappling with feelings of abandonment and a desperate yearning to reclaim his former glory.</p>
+                <p>Just as he was beginning to lose hope, a new opportunity emerged on the horizon: memecoins. These digital currencies, driven by the whims of internet culture and viral trends, presented Eric with a beacon of opportunity. Seeing this as a chance to make a sensational return, he seized the moment and launched his own memecoin, brimming with high hopes and expectations.</p>
+                <p>As his memecoin surges in value, Eric's life begins to spiral back into the high-octane, extravagant lifestyle he had once relished. He finds himself once again enmeshed in a whirlwind of indulgence—engaging in wild parties, excessive drug use, passionate but fleeting relationships, and high-stakes gambling. His behavior becomes increasingly chaotic, characterized by a frenetic energy that he struggles to control. The intoxicating allure of his previous hedonistic habits reclaims him, setting the stage for a dramatic and turbulent comeback that echoes his past excesses throughout the crypto sphere.</p>
+            </div>
         </div>
+    </div>
+    <div id="__next">
+        <div class="loading-screen">
+            <div class="spinner"></div>
+            <div class="spinner-image"></div>
+        </div>
+        <div class="about-button-container">
+            <button id="aboutButton">About</button>
+        </div>
+        
 
+        <div id="hover-text"
+            style="position:fixed;width:100%;height:100%;font-size:155px;color:#ffffff;font-family:HardcorePenRegular;pointer-events:none;opacity:0.1;transition:opacity 0.5s;z-index:2000;background:radial-gradient(circle, rgba(58, 149, 45, 0.37) 0%, rgba(0, 0, 0, 0.17) 40%), rgba(148,187,233,0) 40%);display:flex;justify-content:center;align-items:center">
+            <h2>About Flat Eric</h2>
+        </div>
+        <div id="main" style="height:100%;width:100%;position:fixed;top:0;left:0;display:none"></div>
     </div>
     <script id="__NEXT_DATA__"
         type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"ENMx39zBjcOR11lVZnEyp","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
