@@ -265,10 +265,10 @@
             frames: 59,
             speed: 0.25,
             repeatFrequency: 0,
-            mobile: !0,
+            // mobile: !0,
             desktop: !0,
             basis: !0,
-            mobileBasis: !0,
+            // mobileBasis: !0,
           },
           muppets: {
             loop: !1,
