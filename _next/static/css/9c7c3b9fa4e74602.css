@@ -17,7 +17,7 @@
 
 #aboutButton {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -80,7 +80,7 @@
 .close-button {
     background: none;
     border: none;
-    font-size: 16px;
+    font-size: 24px;
     cursor: pointer;
 }
 h2 {
