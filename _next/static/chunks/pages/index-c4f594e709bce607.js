@@ -222,7 +222,7 @@
             frames: 155,
             speed: 0.3,
             repeatFrequency: 5,
-            // mobile: !0,
+            mobile: !0,
             desktop: !0,
             basis: !0,
             mobileBasis: !1,
