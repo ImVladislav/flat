@@ -222,7 +222,7 @@
             frames: 155,
             speed: 0.3,
             repeatFrequency: 5,
-            mobile: !0,
+            // mobile: !0,
             desktop: !0,
             basis: !0,
             mobileBasis: !1,
@@ -1497,126 +1497,146 @@
           },
           [F]
         );
-        var we = function () {
-          var e = document.getElementById("knock-container");
-          e &&
-            ((e.style.opacity = "0"),
-            setTimeout(function () {
-              (e.style.display = "none"), B.current && B.current.kill();
-            }, 500)),
-            z.current && z.current.play();
-        };
-        (0, a.useEffect)(
-          function () {
-            if (M && C) {
-              var e = d.ZP.timeline({ repeat: -1, delay: 1 }),
-                n = document.querySelector("#swipe-hand"),
-                t = document.querySelector("#swipe-text");
-              return (
-                n &&
-                  t &&
-                  (e
-                    .to(n, { x: 50, duration: 1, ease: "power1.inOut" })
-                    .to(n, { x: -50, duration: 1, ease: "power1.inOut" })
-                    .to(n, { x: 0, duration: 1, ease: "power1.inOut" })
-                    .to(n, { opacity: 0, duration: 0.5 }, "-=0.5")
-                    .to(n, { opacity: 1, duration: 0.5 }, "-=0.5"),
-                  d.ZP.to(t, {
-                    opacity: 1,
-                    duration: 1,
-                    yoyo: !0,
-                    repeat: -1,
-                  })),
-                function () {
-                  e.kill();
-                }
-              );
-            }
-          },
-          [M, C]
-        );
-        var me = function (e) {
-          console.log("First touch detected!"), H(!0);
-          var n = L.current;
-          n &&
-            (console.log("Hiding swipe instruction..."),
-            d.ZP.to(n, {
-              opacity: 0,
-              duration: 0.5,
-              onComplete: function () {
-                (n.style.display = "none"),
-                  console.log("Swipe instruction hidden.");
-              },
-            }));
-        };
-        return (0, i.jsxs)(i.Fragment, {
-          children: [
-            F &&
-              (0, i.jsxs)("div", {
-                className: "loading-screen",
-                children: [
-                  (0, i.jsx)("div", { className: "spinner" }),
-                  (0, i.jsx)("div", { className: "spinner-image" }),
-                ],
+var we = function () {
+  var e = document.getElementById("knock-container");
+  e &&
+    ((e.style.opacity = "0"),
+    setTimeout(function () {
+      (e.style.display = "none"), B.current && B.current.kill();
+    }, 500)),
+    z.current && z.current.play();
+};
+
+(0, a.useEffect)(
+  function () {
+    if (M && C) {
+      var e = d.ZP.timeline({ repeat: -1, delay: 1 }),
+        n = document.querySelector("#swipe-hand"),
+        t = document.querySelector("#swipe-text");
+      return (
+        n &&
+          t &&
+          (e
+            .to(n, { x: 50, duration: 1, ease: "power1.inOut" })
+            .to(n, { x: -50, duration: 1, ease: "power1.inOut" })
+            .to(n, { x: 0, duration: 1, ease: "power1.inOut" })
+            .to(n, { opacity: 0, duration: 0.5 }, "-=0.5")
+            .to(n, { opacity: 1, duration: 0.5 }, "-=0.5"),
+          d.ZP.to(t, {
+            opacity: 1,
+            duration: 1,
+            yoyo: !0,
+            repeat: -1,
+          })),
+        function () {
+          e.kill();
+        }
+      );
+    }
+  },
+  [M, C]
+);
+
+var me = function (e) {
+  console.log("First touch detected!"), H(!0);
+  var n = L.current;
+  n &&
+    (console.log("Hiding swipe instruction..."),
+    d.ZP.to(n, {
+      opacity: 0,
+      duration: 0.5,
+      onComplete: function () {
+        (n.style.display = "none"),
+          console.log("Swipe instruction hidden.");
+      },
+    }));
+};
+
+return (0, i.jsxs)(i.Fragment, {
+  children: [
+    F &&
+      (0, i.jsxs)("div", {
+        className: "loading-screen",
+        children: [
+          (0, i.jsx)("div", { className: "spinner" }),
+          (0, i.jsx)("div", { className: "spinner-image" }),
+          (0, i.jsx)("div", {
+            id: "load",
+            children: [
+              (0, i.jsx)("div", { children: "G" }),
+              (0, i.jsx)("div", { children: "N" }),
+              (0, i.jsx)("div", { children: "I" }),
+              (0, i.jsx)("div", { children: "D" }),
+              (0, i.jsx)("div", { children: "A" }),
+              (0, i.jsx)("div", { children: "O" }),
+              (0, i.jsx)("div", { children: "L" }),
+            ],
+          }),
+        ],
+      }),
+    !F &&
+      !C &&
+      (0, i.jsxs)("div", {
+        children: [
+          (0, i.jsxs)("div", {
+            id: "knock-container",
+            style: {
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -57%)",
+              zIndex: 2000,
+              textAlign: "center",
+              cursor: "pointer",
+              transition: "opacity 0.5s ease-out",
+            },
+            onClick: we,
+            children: [
+              (0, i.jsx)("h1", {
+                id: "knock-text",
+                style: {
+                  fontFamily: "HardcorePenRegular",
+                  fontSize: "65px",
+                  color: "#FFD700",
+                  textShadow: "0px 0px 15px #FFA500",
+                  letterSpacing: "2px",
+                  lineHeight: "60px",
+                  opacity: 1,
+                  marginRight: "-20%",
+                },
+                children: "Knock",
               }),
-            !F &&
-              !C &&
-              (0, i.jsxs)("div", {
-                children: [
-                  (0, i.jsxs)("div", {
-                    id: "knock-container",
-                    style: {
-                      position: "absolute",
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -57%)",
-                      zIndex: 2e3,
-                      textAlign: "center",
-                      cursor: "pointer",
-                      transition: "opacity 0.5s ease-out",
-                    },
-                    onClick: we,
-                    children: [
-                      (0, i.jsx)("h1", {
-                        id: "knock-text",
-                        style: {
-                          fontFamily: "HardcorePenRegular",
-                          fontSize: "65px",
-                          color: "#FFD700",
-                          textShadow: "0px 0px 15px #FFA500",
-                          letterSpacing: "2px",
-                          lineHeight: "60px",
-                          opacity: 1,
-                          marginRight: "-20%",
-                        },
-                        children: "Knock",
-                      }),
-                      (0, i.jsx)("h1", {
-                        id: "knock-text",
-                        style: {
-                          fontFamily: "HardcorePenRegular",
-                          fontSize: "65px",
-                          color: "#FFD700",
-                          textShadow: "0px 0px 15px #FFA500",
-                          letterSpacing: "2px",
-                          lineHeight: "45px",
-                          opacity: 1,
-                          marginRight: "40%",
-                        },
-                        children: "Knock",
-                      }),
-                      (0, i.jsx)("p", {
-                        style: {
-                          fontFamily: "HardcorePenRegular",
-                          fontSize: "50px",
-                          color: "#FFFFFF",
-                          marginTop: "200px",
-                          marginLeft: "-20%",
-                        },
-                        children: "Click to enter",
-                      }),
-                    ],
-                  }),
+              (0, i.jsx)("h1", {
+                id: "knock-text",
+                style: {
+                  fontFamily: "HardcorePenRegular",
+                  fontSize: "65px",
+                  color: "#FFD700",
+                  textShadow: "0px 0px 15px #FFA500",
+                  letterSpacing: "2px",
+                  lineHeight: "45px",
+                  opacity: 1,
+                  marginRight: "40%",
+                },
+                children: "Knock",
+              }),
+              (0, i.jsx)("p", {
+                style: {
+                  fontFamily: "HardcorePenRegular",
+                  fontSize: "50px",
+                  color: "#FFFFFF",
+                  marginTop: "200px",
+                  marginLeft: "-20%",
+                },
+                children: "Click to enter",
+              }),
+            ],
+          }),
+        ],
+      }),
+  ],
+}),
+                  
                   (0, i.jsx)("video", {
                     ref: z,
                     style: {
