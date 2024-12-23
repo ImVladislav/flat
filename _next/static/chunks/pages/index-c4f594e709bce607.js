@@ -1182,17 +1182,17 @@
               },
 
               dexscreener: {
-                url: "https://dexscreener.com/solana/e5JdPL4GStJy27USER4Mg2eCpukJNf8tRmLFgytpump",
+                url: "https://dexscreener.com/solana/EENevTG5pncwpyH3WH5nPCJpRdcLBVZsfiSdr2Spump",
                 jsonKey: "dexscreener",
                 color: "rgba(0, 0, 0, 0.67)",
               },
               dextools: {
-                url: "https://www.dextools.io/app/en/solana/pair-explorer/EMvYVdibPVkTE8nMf2bWiZ2LzUEpRAotv5B3ekkY4HQr",
+                url: "https://www.dextools.io/app/en/solana/pair-explorer/9BwqVMmrsdGZ3WANeysaipuXjfyyoVbPsJrVUJXBBH52",
                 jsonKey: "dextools",
                 color: "rgba(0, 200, 255, 0.67)",
               },
               buy: {
-                url: "https://raydium.io/swap/?inputMint=sol&outputMint=e5JdPL4GStJy27USER4Mg2eCpukJNf8tRmLFgytpump",
+                url: "https://raydium.io/swap/?inputMint=sol&outputMint=EENevTG5pncwpyH3WH5nPCJpRdcLBVZsfiSdr2Spump",
                 jsonKey: "buy",
                 color: "rgba(255, 165, 0, 0.67)",
               },
