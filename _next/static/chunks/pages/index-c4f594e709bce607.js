@@ -1156,43 +1156,43 @@
               });
             var e = {
                 tiktok: {
-                url: "https://www.geckoterminal.com/solana/pools/Ha6hKRSeWJ79G4MncaeEEZ6jWKjovQxpKioaca53Ny5u",
+                url: "#",
                 jsonKey: "tiktok",
                 color: "rgba(255, 0, 130, 0.67)",
               },
               x: {
-                url: "https://www.instagram.com/flatericonsol/",
+                url: "https://x.com/TheGarryCorner",
                 jsonKey: "x",
                 color: "rgba(0, 0, 0, 0.67)",
               },
               telegram: {
-                url: "https://t.me/Flat_Eric_Community",
+                url: "https://t.me/TheGarryCorner",
                 jsonKey: "telegram",
                 color: "rgba(0, 136, 204, 0.67)",
               },
               coingecko: {
-                url: "https://www.tiktok.com/@flatericonsol",
+                url: "#",
                 jsonKey: "coingecko",
                 color: "rgba(75, 204, 0, 0.67)",
               },
               coinmarket: {
-                url: "https://x.com/FlatEriconSol",
+                url: "#",
                 jsonKey: "coinmarket",
                 color: "rgba(0, 0, 255, 0.67)",
               },
 
               dexscreener: {
-                url: "https://dexscreener.com/solana/ha6hkrsewj79g4mncaeeez6jwkjovqxpkioaca53ny5u",
+                url: "https://dexscreener.com/solana/e5JdPL4GStJy27USER4Mg2eCpukJNf8tRmLFgytpump",
                 jsonKey: "dexscreener",
                 color: "rgba(0, 0, 0, 0.67)",
               },
               dextools: {
-                url: "https://www.dextools.io/app/en/solana/pair-explorer/Ha6hKRSeWJ79G4MncaeEEZ6jWKjovQxpKioaca53ny5u?t=1729277212925",
+                url: "https://www.dextools.io/app/en/solana/pair-explorer/EMvYVdibPVkTE8nMf2bWiZ2LzUEpRAotv5B3ekkY4HQr",
                 jsonKey: "dextools",
                 color: "rgba(0, 200, 255, 0.67)",
               },
               buy: {
-                url: "https://jup.ag/swap/SOL-ERIC",
+                url: "https://raydium.io/swap/?inputMint=sol&outputMint=e5JdPL4GStJy27USER4Mg2eCpukJNf8tRmLFgytpump",
                 jsonKey: "buy",
                 color: "rgba(255, 165, 0, 0.67)",
               },
